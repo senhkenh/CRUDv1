@@ -34,9 +34,9 @@ API REST con Spring Boot 4.1.1 y Java 17 para gestión de usuarios con operacion
 En `src/main/resources/application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/nombre_tu_base_datos
-spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 ## Ejecución
